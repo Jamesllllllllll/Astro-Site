@@ -1,5 +1,9 @@
 # Astro Starter Kit: Minimal
 
+## :house: [My First Astro Site](https://jameskeezer.netlify.app/)
+
+----
+ 
 ```
 npm create astro@latest -- --template minimal
 ```
