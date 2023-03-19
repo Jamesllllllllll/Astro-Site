@@ -1,14 +1,18 @@
 ---
+import { Icon } from 'astro-icon';
 const { platform, username } = Astro.props;
 ---
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+<a href={`https://www.${platform}.com/${username}`}><Icon name="ri:github-fill" style="width:20px;" />{platform}</a>
 
 <style>
     a {
+      font-family: monospace;
       padding: 0.5rem 1rem;
       border-radius: 3px;
       color: white;
       background-color: #4c1d95;
       text-decoration: none;
+      display: flex;
+      gap:5px;
     }
   </style>
