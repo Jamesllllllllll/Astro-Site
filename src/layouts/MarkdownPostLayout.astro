@@ -13,6 +13,7 @@ const { frontmatter } = Astro.props;
   <slot />
 
   <div class="tags">
+    <h4>Post tags:</h4>
     {frontmatter.tags.map((tag) => (
       <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
     ))}
@@ -28,6 +29,8 @@ const { frontmatter } = Astro.props;
       display: flex;
       flex-wrap: wrap;
       margin: 0 auto;
+      border-top: 1px #0d1321 dotted;
+      margin-top: 5rem;
     }
   
     .tag {
@@ -37,5 +40,13 @@ const { frontmatter } = Astro.props;
       padding: 0.5em 1em;
       font-size: 1.15em;
       background-color: #f8fcfd;
+    }
+
+    .tags h4 {
+      width: 100%;
+    }
+
+    .dark .tags {
+      border-top: 1px #a1a1a1 dotted;
     }
   </style>
