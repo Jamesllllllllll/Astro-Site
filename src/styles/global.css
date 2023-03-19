@@ -1,10 +1,11 @@
 html {
   background-color: #f1f5f9;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 html.dark {
-  background-color: #0D1321;
+  background-color: #0d1321;
   color: #fff;
 }
 
@@ -29,7 +30,40 @@ h1 {
   font-size: 2.5rem;
 }
 
+a,
+a:visited {
+  color: #0d1321;
+}
+
+.dark a,
+.dark a:visited {
+  color: #fff;
+}
+
+.dark .tag a {
+  color: #0d1321;
+}
+
+.dark a.tag {
+  color: #0d1321;
+}
+
 /* nav styles */
+
+nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#themeToggle, .hamburger {
+  margin-top: 0.4rem;
+}
+
+#themeToggle {
+  justify-self: flex-end;
+}
+
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
@@ -40,19 +74,18 @@ h1 {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: #86615C;
+  background-color: #86615c;
 }
 .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #86615C;
   display: none;
   margin: 0;
 }
 
 .nav-links a {
-  color: #0D1321;
+  color: #0d1321;
   display: block;
   text-align: center;
   padding: 10px 0;
@@ -64,17 +97,20 @@ h1 {
 
 .nav-links a:hover,
 a:focus {
-  background-color: #86615C;
-  color:#fff;
+  background-color: #86615c;
+  color: #fff;
 }
 
 .expanded {
   display: unset;
 }
 
+footer a {
+  color: #fff;
+}
+
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
     display: block;
     position: static;
     width: auto;
@@ -84,5 +120,9 @@ a:focus {
   .nav-links a {
     display: inline-block;
     padding: 15px 20px;
+  }
+
+  .hamburger {
+    display:none;
   }
 }
