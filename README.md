@@ -1,6 +1,6 @@
 # Astro Starter Kit: Minimal
 
-## :house: [My First Astro Site](https://jameskeezer.netlify.app/) // Hosted on Netlify and [jameskeezer.dev](jameskeezer.dev)
+## :house: [My First Astro Site](https://jameskeezer.netlify.app/) // Hosted on Netlify and [https://jameskeezer.dev](jameskeezer.dev)
 
 ----
  
